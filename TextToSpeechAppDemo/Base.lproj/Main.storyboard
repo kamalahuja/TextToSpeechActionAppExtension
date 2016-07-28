@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextToSpeechAppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hi Rozy!! how are you doing?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-wI-t95">
+                                <rect key="frame" x="57" y="139" width="486" height="322"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJr-SU-ef3">
+                                <rect key="frame" x="201" y="78" width="198" height="11"/>
+                                <state key="normal" title="Click Here to read below text"/>
+                                <connections>
+                                    <action selector="submitYourTextTobeRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2M-QR-EVY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0yp-wI-t95" secondAttribute="trailing" constant="57" id="6wN-nt-j7B"/>
+                            <constraint firstItem="YJr-SU-ef3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hdx-z9-aUT"/>
+                            <constraint firstItem="0yp-wI-t95" firstAttribute="top" secondItem="YJr-SU-ef3" secondAttribute="bottom" constant="50" id="RvW-S4-xGk"/>
+                            <constraint firstItem="0yp-wI-t95" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V4P-Yf-NkT"/>
+                            <constraint firstItem="0yp-wI-t95" firstAttribute="top" secondItem="YJr-SU-ef3" secondAttribute="bottom" constant="50" id="VBD-Ec-4L1"/>
+                            <constraint firstItem="0yp-wI-t95" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XSg-nG-ido"/>
+                            <constraint firstItem="YJr-SU-ef3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="ana-8P-E9Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0yp-wI-t95" secondAttribute="bottom" constant="139" id="qww-j3-9ro"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textReadButton" destination="YJr-SU-ef3" id="hMp-dh-aSt"/>
+                        <outlet property="textViewOutlet" destination="0yp-wI-t95" id="P9i-50-xqF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="337"/>
+        </scene>
+    </scenes>
+</document>
